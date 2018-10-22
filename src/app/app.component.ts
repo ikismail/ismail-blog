@@ -10,5 +10,11 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     console.log("App Component ");
+    const script = document.createElement("script");
+    script.setAttribute(
+      "src",
+      "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
+    );
+    document.body.appendChild(script);
   }
 }

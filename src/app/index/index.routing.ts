@@ -14,6 +14,10 @@ const routes: Routes = [
       {
         path: "home",
         loadChildren: "../layout/home/home.module#HomeModule"
+      },
+      {
+        path: "blog",
+        loadChildren: "../layout/blog/blog.module#BlogModule"
       }
     ]
   }

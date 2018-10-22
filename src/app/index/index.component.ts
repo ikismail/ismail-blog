@@ -6,7 +6,12 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./index.component.scss"]
 })
 export class IndexComponent implements OnInit {
+  isToggle = false;
   constructor() {}
 
   ngOnInit() {}
+
+  toggle() {
+    this.isToggle = !this.isToggle;
+  }
 }
