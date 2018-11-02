@@ -1,13 +1,13 @@
 <!-- Header -->
-<div id="particles-js"></div>
 
 <header id="header">
   <div class="inner">
     <a href="javascript:;;" class="image avatar"><img src="https://avatars1.githubusercontent.com/u/17190913?s=460&v=4"
         alt="" /></a>
-    <h1><strong>I am Mohammed Ismail</strong>, a super simple<br />
-      responsive site template freebie<br />
-      crafted by <a href="http://html5up.net">HTML5 UP</a>.</h1>
+    <h1><strong>I am {{user.name}}</strong>,<br />
+      {{user.position}},<br />
+      {{user.bio}}.
+    </h1>
   </div>
   <ul class="actions" style="display: block">
     <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active" class="button">My Blog</a></li>
@@ -16,10 +16,14 @@
   <footer id="footer">
     <div class="inner">
       <ul class="icons">
-        <li><a href="javascript:;;" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-        <li><a href="javascript:;;" class="icon fa-github"><span class="label">Github</span></a></li>
-        <li><a href="javascript:;;" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-        <li><a href="javascript:;;" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        <li><a [href]="user.link.twitter.link" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a [href]="user.link.github.link" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+        <li><a [href]="user.link.instagram.link" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a [href]="user.link.facebook.link" target="_blank" class="icon fa-facebook-f"><span class="label">Facebook</span></a></li>
+        <li><a [href]="user.link.codepen.link" target="_blank" class="icon fa-codepen"><span class="label">Codepen</span></a></li>
+        <li><a [href]="user.link.freeCodeCamp.link" target="_blank" class="icon fa-free-code-camp"><span class="label">FreeCodeCamp</span></a></li>
+        <li><a [href]="user.link.linkedIn.link" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="mailto:{{user.email}}" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
       </ul>
       <ul class="copyright">
         <li>&copy; Untitled</li>

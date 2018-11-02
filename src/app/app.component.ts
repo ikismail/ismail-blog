@@ -1,20 +1,24 @@
 import { Component, OnInit } from "@angular/core";
+import { Router, NavigationEnd } from "@angular/router";
 
 @Component({
   selector: "app-root",
-  template: `<router-outlet></router-outlet>`,
+  template: `
+    <router-outlet></router-outlet>
+  `,
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent implements OnInit {
   title = "app";
 
+  constructor(private router: Router) {}
+
   ngOnInit(): void {
-    console.log("App Component ");
-    const script = document.createElement("script");
-    script.setAttribute(
-      "src",
-      "https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"
-    );
-    document.body.appendChild(script);
+    this.router.events.subscribe(evt => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0);
+    });
   }
 }
