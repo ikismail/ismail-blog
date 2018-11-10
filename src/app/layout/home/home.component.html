@@ -2,24 +2,17 @@
 
 <header id="header">
   <div class="inner">
-    <a href="javascript:;;" class="image avatar"
-      ><img [src]="user.avatar" [alt]="user.name"
-    /></a>
+    <a href="javascript:;;" class="image avatar"><img [src]="user.avatar" [alt]="user.name" /></a>
     <h1>
-      <strong>I am {{ user.name }}</strong
-      >,<br />
+      <strong>I am {{ user.name }}</strong>,<br />
       {{ user.position }},<br />
       {{ user.bio }}.
     </h1>
   </div>
   <ul class="actions" style="display: block">
     <li>
-      <a
-        [routerLink]="['/blog']"
-        routerLinkActive="router-link-active"
-        class="button"
-        >My Blog</a
-      >
+      <a [routerLink]="['/blog']" routerLinkActive="router-link-active" class="button" style="color: #fff !important">My
+        Blog</a>
     </li>
   </ul>
   <!-- Footer -->
@@ -27,65 +20,28 @@
     <div class="inner">
       <ul class="icons">
         <li>
-          <a
-            [href]="user.link.twitter.link"
-            target="_blank"
-            class="icon fa-twitter"
-            ><span class="label">Twitter</span></a
-          >
+          <a [href]="user.link.twitter.link" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.github.link"
-            target="_blank"
-            class="icon fa-github"
-            ><span class="label">Github</span></a
-          >
+          <a [href]="user.link.github.link" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.instagram.link"
-            target="_blank"
-            class="icon fa-instagram"
-            ><span class="label">Instagram</span></a
-          >
+          <a [href]="user.link.instagram.link" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.facebook.link"
-            target="_blank"
-            class="icon fa-facebook-f"
-            ><span class="label">Facebook</span></a
-          >
+          <a [href]="user.link.facebook.link" target="_blank" class="icon fa-facebook-f"><span class="label">Facebook</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.codepen.link"
-            target="_blank"
-            class="icon fa-codepen"
-            ><span class="label">Codepen</span></a
-          >
+          <a [href]="user.link.codepen.link" target="_blank" class="icon fa-codepen"><span class="label">Codepen</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.freeCodeCamp.link"
-            target="_blank"
-            class="icon fa-free-code-camp"
-            ><span class="label">FreeCodeCamp</span></a
-          >
+          <a [href]="user.link.freeCodeCamp.link" target="_blank" class="icon fa-free-code-camp"><span class="label">FreeCodeCamp</span></a>
         </li>
         <li>
-          <a
-            [href]="user.link.linkedIn.link"
-            target="_blank"
-            class="icon fa-linkedin"
-            ><span class="label">LinkedIn</span></a
-          >
+          <a [href]="user.link.linkedIn.link" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
         </li>
         <li>
-          <a href="mailto:{{user.email}}" class="icon fa-envelope-o"
-            ><span class="label">Email</span></a
-          >
+          <a href="mailto:{{user.email}}" class="icon fa-envelope-o"><span class="label">Email</span></a>
         </li>
       </ul>
       <ul class="copyright">
@@ -102,7 +58,7 @@
   <section id="one">
     <header class="major">
       <h2>
-        I am a <b>full-stack developer</b> with <b>2 years of experience</b>.
+        I am a <b>Full-Stack Web Developer</b> with <b>2 years of Experience</b>.
       </h2>
     </header>
     <p>
@@ -123,10 +79,8 @@
 
     <h3></h3>
     <p>
-      <strong
-        >I specialise in applications written in
-        <span style="color: #49bf9d;">Angular</span></strong
-      >. recently I became also a huge fan of
+      <strong>I specialise in applications written in
+        <span style="color: #49bf9d;">Angular</span></strong>. recently I became also a huge fan of
       <span style="color: #49bf9d;">Python</span> aswell. <br />
       My current experience and skills in front-end include:
     </p>
@@ -200,15 +154,12 @@
     <ul class="actions small">
       <li><a href="javascript:;;" class="button primary small">Java</a></li>
       <li>
-        <a href="javascript:;;" class="button primary small"
-          >RESTfull Services</a
-        >
+        <a href="javascript:;;" class="button primary small">RESTfull Services</a>
       </li>
       <li>
         <a href="javascript:;;" class="button primary small">Jersey- JaxRS</a>
       </li>
       <li><a href="javascript:;;" class="button primary small">JBehave</a></li>
-      <li><a href="javascript:;;" class="button primary small">API</a></li>
       <li>
         <a href="javascript:;;" class="button primary small">AngularJs</a>
       </li>
@@ -217,50 +168,13 @@
   </section>
 
   <!-- Two -->
-  <section id="two">
+  <section id="three">
     <h2 style="color: #49bf9d;">Recent Work</h2>
     <div class="row">
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="../../assets/images/fulls/01.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/01.jpg" alt=""
-        /></a>
-        <h3>Magna sed consequat tempus</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="images/fulls/02.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/02.jpg" alt=""
-        /></a>
-        <h3>Ultricies lacinia interdum</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="../../assets/images/fulls/03.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/03.jpg" alt=""
-        /></a>
-        <h3>Tortor metus commodo</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="../../assets/images/fulls/04.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/04.jpg" alt=""
-        /></a>
-        <h3>Quam neque phasellus</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="../../assets/images/fulls/05.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/05.jpg" alt=""
-        /></a>
-        <h3>Nunc enim commodo aliquet</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-      <article class="col-6 col-12-xsmall work-item">
-        <a href="../../assets/images/fulls/06.jpg" class="image fit thumb"
-          ><img src="../../assets/images/thumbs/06.jpg" alt=""
-        /></a>
-        <h3>Risus ornare lacinia</h3>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+      <article class="col-6 col-12-xsmall work-item" *ngFor="let project of projects">
+        <a [href]="project.link" class="image fit thumb" target="_blank"><img [src]="project.image" [alt]="project.name" /></a>
+        <h3>{{project.name}}</h3>
+        <p>{{project.description}}.</p>
       </article>
     </div>
     <ul class="actions">
@@ -268,7 +182,10 @@
     </ul>
   </section>
 
-  <section id="three"><app-github-calendar></app-github-calendar></section>
+  <section id="three">
+    <h2 style="color: #49bf9d;">My Github Contributions</h2>
+    <app-github-calendar></app-github-calendar>
+  </section>
 
   <!-- Three -->
   <section id="four">
@@ -289,12 +206,7 @@
               <input type="email" name="email" id="email" placeholder="Email" />
             </div>
             <div class="col-12">
-              <textarea
-                name="message"
-                id="message"
-                placeholder="Message"
-                rows="4"
-              ></textarea>
+              <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
             </div>
           </div>
         </form>
@@ -417,34 +329,22 @@
           <h5>Icons</h5>
           <ul class="icons">
             <li>
-              <a href="javascript:;;" class="icon fa-twitter"
-                ><span class="label">Twitter</span></a
-              >
+              <a href="javascript:;;" class="icon fa-twitter"><span class="label">Twitter</span></a>
             </li>
             <li>
-              <a href="javascript:;;" class="icon fa-facebook"
-                ><span class="label">Facebook</span></a
-              >
+              <a href="javascript:;;" class="icon fa-facebook"><span class="label">Facebook</span></a>
             </li>
             <li>
-              <a href="javascript:;;" class="icon fa-instagram"
-                ><span class="label">Instagram</span></a
-              >
+              <a href="javascript:;;" class="icon fa-instagram"><span class="label">Instagram</span></a>
             </li>
             <li>
-              <a href="javascript:;;" class="icon fa-github"
-                ><span class="label">Github</span></a
-              >
+              <a href="javascript:;;" class="icon fa-github"><span class="label">Github</span></a>
             </li>
             <li>
-              <a href="javascript:;;" class="icon fa-dribbble"
-                ><span class="label">Dribbble</span></a
-              >
+              <a href="javascript:;;" class="icon fa-dribbble"><span class="label">Dribbble</span></a>
             </li>
             <li>
-              <a href="javascript:;;" class="icon fa-tumblr"
-                ><span class="label">Tumblr</span></a
-              >
+              <a href="javascript:;;" class="icon fa-tumblr"><span class="label">Tumblr</span></a>
             </li>
           </ul>
         </div>
@@ -604,9 +504,7 @@
       </ul>
       <ul class="actions fit small">
         <li>
-          <a href="javascript:;;" class="button primary fit small"
-            >Fit + Small</a
-          >
+          <a href="javascript:;;" class="button primary fit small">Fit + Small</a>
         </li>
         <li>
           <a href="javascript:;;" class="button fit small">Fit + Small</a>
@@ -614,9 +512,7 @@
       </ul>
       <ul class="actions">
         <li>
-          <a href="javascript:;;" class="button primary icon fa-download"
-            >Icon</a
-          >
+          <a href="javascript:;;" class="button primary icon fa-download">Icon</a>
         </li>
         <li>
           <a href="javascript:;;" class="button icon fa-download">Icon</a>
@@ -633,22 +529,10 @@
       <form method="post" action="#">
         <div class="row gtr-uniform gtr-50">
           <div class="col-6 col-12-xsmall">
-            <input
-              type="text"
-              name="demo-name"
-              id="demo-name"
-              value=""
-              placeholder="Name"
-            />
+            <input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
           </div>
           <div class="col-6 col-12-xsmall">
-            <input
-              type="email"
-              name="demo-email"
-              id="demo-email"
-              value=""
-              placeholder="Email"
-            />
+            <input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
           </div>
           <div class="col-12">
             <select name="demo-category" id="demo-category">
@@ -660,20 +544,11 @@
             </select>
           </div>
           <div class="col-4 col-12-small">
-            <input
-              type="radio"
-              id="demo-priority-low"
-              name="demo-priority"
-              checked
-            />
+            <input type="radio" id="demo-priority-low" name="demo-priority" checked />
             <label for="demo-priority-low">Low Priority</label>
           </div>
           <div class="col-4 col-12-small">
-            <input
-              type="radio"
-              id="demo-priority-normal"
-              name="demo-priority"
-            />
+            <input type="radio" id="demo-priority-normal" name="demo-priority" />
             <label for="demo-priority-normal">Normal Priority</label>
           </div>
           <div class="col-4 col-12-small">
@@ -689,12 +564,7 @@
             <label for="demo-human">I am a human and not a robot</label>
           </div>
           <div class="col-12">
-            <textarea
-              name="demo-message"
-              id="demo-message"
-              placeholder="Enter your message"
-              rows="6"
-            ></textarea>
+            <textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
           </div>
           <div class="col-12">
             <ul class="actions">
@@ -714,61 +584,41 @@
       <div class="box alt">
         <div class="row gtr-50 gtr-uniform">
           <div class="col-12">
-            <span class="image fit"
-              ><img src="images/fulls/05.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/fulls/05.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/01.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/02.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/03.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/04.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/04.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/05.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/05.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/06.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/06.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/03.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/03.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/02.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/02.jpg" alt="" /></span>
           </div>
           <div class="col-4">
-            <span class="image fit"
-              ><img src="images/thumbs/01.jpg" alt=""
-            /></span>
+            <span class="image fit"><img src="images/thumbs/01.jpg" alt="" /></span>
           </div>
         </div>
       </div>
       <h5>Left &amp; Right</h5>
       <p>
-        <span class="image left"><img src="images/avatar.jpg" alt=""/></span
-        >Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+        <span class="image left"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum
+        nisi, quis tincidunt felis
         sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus
         vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
         accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis
@@ -784,8 +634,8 @@
         pellentesque praesent.
       </p>
       <p>
-        <span class="image right"><img src="images/avatar.jpg" alt=""/></span
-        >Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+        <span class="image right"><img src="images/avatar.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum
+        nisi, quis tincidunt felis
         sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus
         vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing
         accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis

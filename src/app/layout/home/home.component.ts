@@ -1,3 +1,4 @@
+import { projects } from "./../../shared/data/projects";
 import { User } from "./../../shared/models/User";
 import { particles } from "./../../shared/config/particle";
 import { Component, OnInit, ViewEncapsulation } from "@angular/core";
@@ -7,10 +8,12 @@ declare var particlesJS: any;
   selector: "app-home",
   templateUrl: "./home.component.html",
   styleUrls: ["./home.component.scss"],
-  encapsulation: ViewEncapsulation.ShadowDom
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class HomeComponent implements OnInit {
   user: User;
+
+  projects = projects;
   constructor() {}
 
   ngOnInit() {
