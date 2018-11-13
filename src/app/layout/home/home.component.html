@@ -1,15 +1,14 @@
 <!-- Header -->
-
 <header id="header">
   <div class="inner">
     <a href="javascript:;;" class="image avatar"><img [src]="user.avatar" [alt]="user.name" /></a>
     <h1>
-      <strong>I am {{ user.name }}</strong>,<br />
-      {{ user.position }},<br />
-      {{ user.bio }}.
+      <strong>I am {{ user.name }}</strong>,
     </h1>
+    <h1>{{ user.position }},</h1>
+    <h1>{{ user.bio }}</h1>
   </div>
-  <ul class="actions" style="display: block">
+  <ul class="actions">
     <li>
       <a [routerLink]="['/blog']" routerLinkActive="router-link-active" class="button" style="color: #fff !important">My
         Blog</a>
@@ -99,91 +98,16 @@
   </section>
 
   <section id="two">
-    <h2 style="color: #49bf9d;">Work Experience</h2>
-    <h3>BIZNESSFORCE SOFTWARE SOLUTIONS | SOFTWARE ENGINEER</h3>
-    <p>Sep 2017 - Current | Chennai, IN</p>
-    <ul>
-      <li>
-        Working as full-stack & IoT Developer, Developed applications using
-        Angular, Python and RESTfull Services.
-      </li>
-      <li>
-        I had learned lot of technologies and faced lot of real time problems as
-        a developer, worked with ERP Task Management.
-      </li>
-      <li>Developed android application using Ionic3.</li>
-      <li>
-        Developed Github Clone using Angular by consuming Github GraphQL API.
-      </li>
-      <li>
-        Working in IoT to monitor the temperature of refrigerator using
-        RaspberryPi-3.
-      </li>
-      <li>
-        Assisted in maintaining and updating existing applications and modules.
-      </li>
-    </ul>
-    <h4>Technologies:</h4>
-    <ul class="actions small">
-      <li><a href="javascript:;;" class="button primary small">Angular</a></li>
-      <li><a href="javascript:;;" class="button primary small">Ionic</a></li>
-      <li><a href="javascript:;;" class="button primary small">IoT</a></li>
-      <li><a href="javascript:;;" class="button primary small">Python</a></li>
-      <li><a href="javascript:;;" class="button primary small">GraphQL</a></li>
-      <li><a href="javascript:;;" class="button primary small">API</a></li>
-    </ul>
-    <hr style="width: 50%" />
-    <h3>SOFTWARE-AG | SOFTWARE ENGINEERING INTERN</h3>
-    <p>Mar 2017 - Sep 2017 | Chennai, IN</p>
-    <ul>
-      <li>Done internship in Research and Development team in SoftwareAG.</li>
-      <li>
-        I had learned and faced lot of real time problems as a developer. Worked
-        with teams like API-Portal, Collaboration and API-Gateway.
-      </li>
-      <li>
-        Developed a script for automation testing using Java, HttpClient and
-        JBehave.
-      </li>
-      <li>Contributed in Jersey based web applications.</li>
-      <li>
-        Assisted in maintaining and updatign existing applications and modules.
-      </li>
-    </ul>
-    <h4>Technologies:</h4>
-    <ul class="actions small">
-      <li><a href="javascript:;;" class="button primary small">Java</a></li>
-      <li>
-        <a href="javascript:;;" class="button primary small">RESTfull Services</a>
-      </li>
-      <li>
-        <a href="javascript:;;" class="button primary small">Jersey- JaxRS</a>
-      </li>
-      <li><a href="javascript:;;" class="button primary small">JBehave</a></li>
-      <li>
-        <a href="javascript:;;" class="button primary small">AngularJs</a>
-      </li>
-      <li><a href="javascript:;;" class="button primary small">Vue.js</a></li>
-    </ul>
+    <app-work-experience></app-work-experience>
   </section>
 
   <!-- Two -->
   <section id="three">
-    <h2 style="color: #49bf9d;">Recent Work</h2>
-    <div class="row">
-      <article class="col-6 col-12-xsmall work-item" *ngFor="let project of projects">
-        <a [href]="project.link" class="image fit thumb" target="_blank"><img [src]="project.image" [alt]="project.name" /></a>
-        <h3>{{project.name}}</h3>
-        <p>{{project.description}}.</p>
-      </article>
-    </div>
-    <ul class="actions">
-      <li><a href="javascript:;;" class="button">Load More</a></li>
-    </ul>
+    <app-recent-work></app-recent-work>
   </section>
 
   <section id="three">
-    <h2 style="color: #49bf9d;">My Github Contributions</h2>
+    <h2 style="color: #49bf9d;">My Contributions</h2>
     <app-github-calendar></app-github-calendar>
   </section>
 
@@ -286,17 +210,6 @@
         dolor sit amet nullam adipiscing eu felis.
       </blockquote>
       <h5>Preformatted</h5>
-      <!--
-        							<pre><code>i = 0;
-
-        while (!deck.isInOrder()) {
-        print 'Iteration ' + i;
-        deck.shuffle();
-        i++;
-        }
-
-        print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-      -->
     </section>
 
     <section>
@@ -651,5 +564,5 @@
         pellentesque praesent.
       </p>
     </section>
-  </section>
+  </section> -->
 </div>

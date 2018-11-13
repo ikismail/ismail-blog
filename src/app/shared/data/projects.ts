@@ -1,18 +1,17 @@
 export const projects = [
   {
     name: "Angular Shopping Cart",
-    image:
-      "https://raw.githubusercontent.com/ikismail/Angular-ShoppingCart/master/screenshots/products.PNG",
+    image: "https://ikismail.github.io/img/image/angular_ecommerce1.PNG",
     description:
       "Developing a ShoppingCart (Ecommerce) Application using Angular6, Firebase Database, MDBootstrap, PWA etc.,",
     link: "https://github.com/ikismail/Angular-ShoppingCart.git"
   },
   {
-    name: "Spring Shopping Cart",
-    image: "https://ikismail.github.io/img/image/shoppingcart.jpg",
+    name: "Github Clone using Github GraphQL API",
+    image: "../../../assets/images/img/GithubClient.PNG",
     description:
-      "Developed an end to end Ecommerce web Application using Spring MVC.",
-    link: "https://github.com/ikismail/ShoppingCart.git"
+      "Developed Github Clone application by consuming Github GraphQL API using AngularV6.",
+    link: "https://github.com/ikismail/ngGithubQL.git"
   },
   {
     name: "Ionic - News Hub",
@@ -23,8 +22,7 @@ export const projects = [
   },
   {
     name: "Vue Shopping Cart",
-    image:
-      "https://image.ibb.co/cF5D6V/screencapture-localhost-8081-2018-10-28-14-33-47.png",
+    image: "../../../assets/images/img/vue-shopping-cart.PNG",
     description:
       "Developing a ShoppingCart (Ecommerce) Application using Vuejs + Nodejs + Express + Mongodb + PWA etc.,",
     link: "https://github.com/ikismail/Vue-ShoppingCart.git"

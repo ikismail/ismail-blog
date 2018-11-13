@@ -7,6 +7,23 @@
     box-shadow: none !important
   }
 
+  @media screen and (max-width: 980px) {
+
+    #footer,
+    .actions {
+      display: none !important
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #header {
+      padding: 6.5em 1.5em;
+    }
+  }
+
+  .actions {
+    display: block;
+  }
 }
 
 
