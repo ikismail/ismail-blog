@@ -1,0 +1,18 @@
+<div class="work-experience">
+  <div *ngFor="let work of works; let i=index">
+    <h2 style="color: #49bf9d;">Work Experience</h2>
+    <h3>{{work.office}} | {{work.position}}</h3>
+    <p>{{work.from}} - {{work.to}} | {{work.state}}, {{work.countryCode}}</p>
+    <ul>
+      <li *ngFor="let desc of work.descriptions">
+        {{desc}}
+      </li>
+    </ul>
+    <h4>Technologies:</h4>
+    <ul class="actions small">
+      <li *ngFor="let tech of work.technologies">
+        <a [href]="tech.link" target="_blank" class="button primary small">{{tech.name}}</a></li>
+    </ul>
+    <hr style="width: 50%" *ngIf="(works.length -1) !== i" />
+  </div>
+</div>
