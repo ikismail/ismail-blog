@@ -4,11 +4,13 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { HomeComponent } from "./home.component";
 import { GithubCalendarComponent } from "./github-calendar/github-calendar.component";
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { RecentWorkComponent } from './recent-work/recent-work.component';
+import { WorkExperienceComponent } from "./work-experience/work-experience.component";
+import { RecentWorkComponent } from "./recent-work/recent-work.component";
+import { GetInTouchComponent } from "./getInTouch/getInTouch.component";
 
 @NgModule({
   imports: [CommonModule, SharedModule, HomeRoutes],
-  declarations: [HomeComponent, GithubCalendarComponent, WorkExperienceComponent, RecentWorkComponent]
+  declarations: [HomeComponent, GithubCalendarComponent, WorkExperienceComponent,
+    GetInTouchComponent, RecentWorkComponent]
 })
-export class HomeModule {}
+export class HomeModule { }

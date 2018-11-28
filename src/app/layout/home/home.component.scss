@@ -26,5 +26,13 @@
   }
 }
 
+#header {
+  border-bottom: solid 3px #49bf9d;
+}
+
+header.major> :last-child {
+  border-bottom: solid 3px #49bf9d;
+}
+
 
 @import "../../../assets/css/strata.css"
