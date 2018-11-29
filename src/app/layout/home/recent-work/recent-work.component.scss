@@ -4,5 +4,14 @@
   }
 }
 
+.image:before{
+  background: none
+}
+
+.image::after {
+  content: "Live Demo" !important;
+  background: url('../../../../assets/css/images/overlay.png')
+}
+
 
 @import "../../../../assets/css/strata.css"

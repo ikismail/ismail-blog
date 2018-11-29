@@ -2,14 +2,13 @@
   <h2 style="color: #49bf9d;">Recent Work</h2>
   <div class="row">
     <article class="col-6 col-12-xsmall work-item" *ngFor="let project of projects">
-      <a [href]="project.link" class="image fit thumb" target="_blank">
+      <a [href]="project.live_link" class="image fit thumb" target="_blank">
         <img [src]="project.image" [alt]="project.name" height="280px" /></a>
-      <h3>{{project.name}}</h3>
+      <h3 style="color: #49bf9d;"><a [href]="project.project_link" target="_blank">{{project.name}}</a> </h3>
       <p>{{project.description}}.</p>
-      <a href="javascript:;;" class="right"><i class="fa fa-eye" aria-hidden="true"></i> Demo</a>
     </article>
   </div>
-  <ul class="actions">
+  <ul class="actions" *ngIf="projects.length > 4 ">
     <li><a href="javascript:;;" class="button">Load More</a></li>
   </ul>
 </div>

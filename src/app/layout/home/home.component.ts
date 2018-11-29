@@ -12,6 +12,8 @@ export class HomeComponent implements OnInit {
   user: User;
 
   projects = projects;
+
+  showBlog = false;
   constructor() {}
 
   ngOnInit() {

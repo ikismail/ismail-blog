@@ -1,7 +1,7 @@
 <div class="work-experience">
   <div *ngFor="let work of works; let i=index">
     <h2 style="color: #49bf9d;">Work Experience</h2>
-    <h3>{{work.office}} | {{work.position}}</h3>
+    <h3><a [href]="work.link">{{work.office}}</a> | {{work.position}}</h3>
     <p>{{work.from}} - {{work.to}} | {{work.state}}, {{work.countryCode}}</p>
     <ul>
       <li *ngFor="let desc of work.descriptions">
