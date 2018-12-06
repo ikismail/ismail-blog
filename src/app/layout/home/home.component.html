@@ -18,34 +18,17 @@
   <footer id="footer">
     <div class="inner">
       <ul class="icons">
-        <li>
-          <a [href]="user.link.twitter.link" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.github.link" target="_blank" class="icon fa-github"><span class="label">Github</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.instagram.link" target="_blank" class="icon fa-instagram"><span class="label">Instagram</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.facebook.link" target="_blank" class="icon fa-facebook-f"><span class="label">Facebook</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.codepen.link" target="_blank" class="icon fa-codepen"><span class="label">Codepen</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.freeCodeCamp.link" target="_blank" class="icon fa-free-code-camp"><span class="label">FreeCodeCamp</span></a>
-        </li>
-        <li>
-          <a [href]="user.link.linkedIn.link" target="_blank" class="icon fa-linkedin"><span class="label">LinkedIn</span></a>
-        </li>
-        <li>
-          <a href="mailto:{{user.email}}" class="icon fa-envelope-o"><span class="label">Email</span></a>
-        </li>
+        <ng-container *ngFor="let socialPlatform of user.links">
+          <li *ngIf="socialPlatform['canShow']">
+            <a [href]="socialPlatform['link']" target="_blank" class="icon" [ngClass]="socialPlatform['icon']"><span
+                class="label">Twitter</span></a>
+          </li>
+        </ng-container>
       </ul>
+
       <ul class="copyright">
         <li>&copy; Untitled</li>
-        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
       </ul>
     </div>
   </footer>

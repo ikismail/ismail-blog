@@ -23,7 +23,24 @@ export class HomeComponent implements OnInit, AfterViewInit {
     constructor(private _spinner: SpinnerService) { }
 
     ngOnInit() {
-        this.user = Profile;
+        const profile = {
+            ...Profile
+        };
+        const links = [];
+        /* Converting the user links object */
+        profile.links.map((link, i) => {
+            const key = Object.keys(link)[0];
+            const object = {
+                platform: key,
+                username: link[key].username,
+                link: link[key].link,
+                icon: this.iconFinderHandler(key),
+                canShow: link[key].canShow
+            };
+            links.push(object);
+        });
+        profile.links = links;
+        this.user = profile;
     }
 
     ngAfterViewInit(): void {
@@ -31,5 +48,27 @@ export class HomeComponent implements OnInit, AfterViewInit {
         setTimeout(function () {
             self._spinner.hide();
         }, 1500);
+    }
+
+
+    iconFinderHandler(icon: string) {
+        switch (icon) {
+            case "github":
+                return "fa-github";
+            case "facebook":
+                return "fa-facebook-f";
+            case "freeCodeCamp":
+                return "fa-free-code-camp";
+            case "linkedIn":
+                return "fa-linkedin";
+            case "twitter":
+                return "fa-twitter";
+            case "youtube":
+                return "fa-youtube";
+            case "codepen":
+                return "fa-codepen";
+            case "instagram":
+                return "fa-instagram";
+        }
     }
 }

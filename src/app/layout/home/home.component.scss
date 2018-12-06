@@ -1,6 +1,11 @@
 :host {
   #main {
     max-width: 64em;
+    padding: 4em 4em 4em 4em;
+  }
+
+  #header>* {
+    flex: none;
   }
 
   .button {
