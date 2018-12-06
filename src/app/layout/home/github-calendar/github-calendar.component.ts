@@ -9,6 +9,6 @@ export class GithubCalendarComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    GitHubCalendar(".calendar", "ikismail");
+    GitHubCalendar(".calendar", "ikismail", {responsice: true});
   }
 }

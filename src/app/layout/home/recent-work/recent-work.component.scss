@@ -4,13 +4,13 @@
   }
 }
 
-.image.thumb::before {
+.image:before {
   background: none
 }
 
-.image.thumb:after {
-  background: url('../../../../assets/css/images/overlay.png');
-  content: 'Live Demo'
+.image::after {
+  content: "Live Demo" !important;
+  background: url('../../../../assets/css/images/overlay.png')
 }
 
 

@@ -1,14 +1,14 @@
 <!-- Header -->
 <header id="header">
   <div class="inner">
-    <a href="javascript:;;" class="image avatar"><img [src]="user.avatar" [alt]="user.name" /></a>
+    <a href="javascript:;;" class="image avatar" style="width:11rem"><img [src]="user.avatar" [alt]="user.name" /></a>
     <h1>
       <strong>I am {{ user.name }}</strong>,
     </h1>
     <h1>{{ user.position }},</h1>
     <h1>{{ user.bio }}</h1>
   </div>
-  <ul class="actions">
+  <ul class="actions" *ngIf="showBlog">
     <li>
       <a [routerLink]="['/blog']" routerLinkActive="router-link-active" class="button" style="color: #fff !important">My
         Blog</a>
@@ -65,6 +65,8 @@
       carrying the development of its back-end and front-end codebases. <br />
       <br />
       My current toolset includes <span style="color: #49bf9d;">Angular</span>,
+      <span style="color: #49bf9d;">React.js</span>,
+      <span style="color: #49bf9d;">Vue.js</span>,
       <span style="color: #49bf9d;">IoT</span>,
       <span style="color: #49bf9d;">Ionic</span>,
       <span style="color: #49bf9d;">Github</span>,
@@ -98,27 +100,27 @@
   </section>
 
   <section id="two">
-    <app-work-experience></app-work-experience>
-  </section>
-
-  <!-- Two -->
-  <section id="three">
-    <app-recent-work></app-recent-work>
-  </section>
-
-  <section id="three">
     <h2 style="color: #49bf9d;">My Contributions</h2>
     <app-github-calendar></app-github-calendar>
   </section>
 
-  <!-- Three -->
+  <section id="three">
+    <app-work-experience></app-work-experience>
+  </section>
+
+  <!-- Two -->
   <section id="four">
-    <app-getInTouch></app-getInTouch>
+    <app-recent-work></app-recent-work>
+  </section>
+
+  <!-- Three -->
+  <section id="five">
+    <app-get-in-touch></app-get-in-touch>
   </section>
 
   <!-- Four 
 
-  <section id="five">
+  <!-- <section id="five">
     <h2>Elements</h2>
 
     <section>

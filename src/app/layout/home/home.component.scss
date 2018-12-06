@@ -7,6 +7,13 @@
     box-shadow: none !important
   }
 
+  // Hiding Github Calendar in mobile view
+  @media screen and (max-width: 400px) and (min-width: 0px) {
+    #two {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 980px) {
 
     #footer,
@@ -27,11 +34,11 @@
 }
 
 #header {
-  border-bottom: solid 3px #49bf9d;
+  border-bottom: solid 5px #49bf9d;
 }
 
 header.major> :last-child {
-  border-bottom: solid 3px #49bf9d;
+  border-bottom: solid 5px #49bf9d;
 }
 
 
