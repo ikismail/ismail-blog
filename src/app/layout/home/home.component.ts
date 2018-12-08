@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     projects = projects;
 
-    showBlog = false;
+    showBlog = true;
     constructor(private _spinner: SpinnerService) { }
 
     ngOnInit() {

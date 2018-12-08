@@ -7,9 +7,9 @@ import { AppComponent } from "./app.component";
 import { LocationStrategy, HashLocationStrategy } from "@angular/common";
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutes, SharedModule, BrowserAnimationsModule],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [BrowserModule, AppRoutes, SharedModule, BrowserAnimationsModule],
+    providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

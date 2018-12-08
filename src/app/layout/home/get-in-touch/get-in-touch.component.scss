@@ -1,6 +1,15 @@
-input[type="submit"],input[type="tel"]:focus,input[type="email"]:focus,input[type="text"]:focus,select,textarea:focus {
-    border-color: #49bf9d;
-    box-shadow: 0 0 0 1px #49bf9d;
+input[type="submit"],
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="text"]:focus,
+select,
+textarea:focus {
+  border-color: #49bf9d;
+  box-shadow: 0 0 0 1px #49bf9d;
+}
+
+.error {
+  color: #f56a6a;
 }
 
 
