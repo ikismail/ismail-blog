@@ -11,8 +11,8 @@ export class ContactService {
     BASE_URL;
 
     constructor(private http: HttpClient) {
-        this.BASE_URL = isDevMode() ?
-            "http://localhost:8080/api/user/mailservice" : environment.BASE_URL;
+        this.BASE_URL =
+            "https://ikismail-portfolio.herokuapp.com/api/user/mailservice";
     }
 
     sendMessage(data: Contact) {

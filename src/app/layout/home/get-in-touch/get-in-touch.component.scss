@@ -1,4 +1,4 @@
-input[type="submit"],
+button[type="submit"],
 input[type="tel"]:focus,
 input[type="email"]:focus,
 input[type="text"]:focus,
@@ -6,6 +6,17 @@ select,
 textarea:focus {
   border-color: #49bf9d;
   box-shadow: 0 0 0 1px #49bf9d;
+}
+
+button[type="submit"] {
+  height: 60px;
+  color: #49bf9d !important;
+  border-radius: 0.35em !important;
+  border: solid 3px #49bf9d
+}
+
+button[type="submit"]:hover {
+  background-color: none
 }
 
 .error {

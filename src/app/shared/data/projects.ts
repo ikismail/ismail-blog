@@ -1,7 +1,7 @@
 export const projects = [
     {
         name: "Angular Shopping Cart",
-        image: "https://ikismail.github.io/img/image/angular_ecommerce1.PNG",
+        image: "https://ikismail.github.io/v1/img/image/angular_ecommerce1.PNG",
         description:
             "Developing a ShoppingCart (Ecommerce) Application using Angular6, Firebase Database, MDBootstrap, PWA etc.,",
         live_link: "https://angular-shoppingcart.firebaseapp.com",

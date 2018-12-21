@@ -15,6 +15,7 @@ export class GetInTouchComponent implements OnInit {
     isError = false;
     errorClass = "";
     form: FormGroup;
+    loading = false;
 
     constructor(private formBuilder: FormBuilder,
         private contactService: ContactService,
@@ -32,6 +33,10 @@ export class GetInTouchComponent implements OnInit {
 
     submit() {
 
+        this.loading = true;
+
+
+
         if (this.form.invalid) {
             this.isError = true;
             this.errorClass = "animated fadeIn";
@@ -41,10 +46,19 @@ export class GetInTouchComponent implements OnInit {
             }, 4000);
             return;
         }
+
+        const submitButton = <HTMLButtonElement>document.getElementById("submitMessage");
+
+        submitButton.disabled = true;
+
         this.contactService.sendMessage(this.form.value)
             .toPromise().then(data => {
+                this.loading = false;
+                submitButton.disabled = false;
                 this.toastr.success("Got your message!", "Message Sent!");
             }, err => {
+                this.loading = false;
+                submitButton.disabled = false;
                 this.toastr.error("Something went wrong", "Error!");
             });
     }

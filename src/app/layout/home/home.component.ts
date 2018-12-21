@@ -19,7 +19,9 @@ export class HomeComponent implements OnInit, AfterViewInit {
 
     projects = projects;
 
-    showBlog = true;
+    showBlog = false;
+
+    today: number = Date.now();
     constructor(private _spinner: SpinnerService) { }
 
     ngOnInit() {
