@@ -9,7 +9,7 @@ export const projects = [
     },
     {
         name: "Vue Shopping Cart",
-        image: "../../../assets/images/img/vue-shopping-cart.PNG",
+        image: "./assets/images/img/vue-shopping-cart.PNG",
         description:
             "Developing a ShoppingCart (Ecommerce) Application using Vuejs + Nodejs + Express + Mongodb + PWA etc.,",
         live_link: "https://vue-shop-cart.herokuapp.com/#/",
@@ -17,7 +17,7 @@ export const projects = [
     },
     {
         name: "Github Clone using Github GraphQL API",
-        image: "../../../assets/images/img/GithubClient.PNG",
+        image: "./assets/images/img/GithubClient.PNG",
         description:
             "Developed Github Clone application by consuming Github GraphQL API using AngularV6.",
         live_link: "https://ng-github-ql-6ffba.firebaseapp.com/dashboard",

@@ -2,7 +2,7 @@ export const WorkExperience = [
   {
     office: "BIZNESSFORCE SOFTWARE SOLUTIONS ",
     position: "SOFTWARE ENGINEER",
-    link: 'http://www.biznessforce.com/#/home',
+    link: "http://www.biznessforce.com/#/home",
     from: "Sep 2017",
     to: "Current",
     state: "Chennai",
@@ -31,7 +31,7 @@ export const WorkExperience = [
     office: "SOFTWARE-AG",
     position: "SOFTWARE ENGINEERING INTERN",
     from: "Mar 2017",
-    link: 'https://www.softwareag.com/corporate/default.html',
+    link: "https://www.softwareag.com/corporate/default.html",
     to: "Sep 2017",
     state: "Chennai",
     countryCode: "IN",

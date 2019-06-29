@@ -1,17 +1,25 @@
 <!-- Header -->
 <header id="header">
   <div class="inner">
-    <a href="javascript:;;" class="image avatar" style="width:11rem"><img [src]="user.avatar" [alt]="user.name" /></a>
+    <a href="javascript:;;" class="image avatar" style="width:11rem"
+      ><img [src]="user.avatar" [alt]="user.name"
+    /></a>
     <h1>
-      <strong>I am {{ user.name }}</strong>,
+      <strong>I am {{ user.name }}</strong
+      >,
     </h1>
     <h1>{{ user.position }},</h1>
     <h1>{{ user.bio }}</h1>
   </div>
   <ul class="actions" *ngIf="showBlog">
     <li>
-      <a [routerLink]="['/blog']" routerLinkActive="router-link-active" class="button" style="color: #fff !important">My
-        Blog</a>
+      <a
+        [routerLink]="['/blog']"
+        routerLinkActive="router-link-active"
+        class="button"
+        style="color: #fff !important"
+        >My Blog</a
+      >
     </li>
   </ul>
   <!-- Footer -->
@@ -20,16 +28,27 @@
       <ul class="icons">
         <ng-container *ngFor="let socialPlatform of user.links">
           <li *ngIf="socialPlatform['canShow']">
-            <a [href]="socialPlatform['link']" target="_blank" class="icon" [ngClass]="socialPlatform['icon']"><span
-                class="label">Twitter</span></a>
+            <a
+              [href]="socialPlatform['link']"
+              target="_blank"
+              class="icon"
+              [ngClass]="socialPlatform['icon']"
+              ><span class="label">Twitter</span></a
+            >
           </li>
         </ng-container>
       </ul>
 
       <ul class="copyright">
-        <li><a href="https://ikismail.github.io/v1/" target="_blank">Portfolio v-1.0</a></li>
-        <li>&copy; {{today | date:'yyyy'}} ikismail</li>
-        <li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
+        <li>
+          <a href="https://ikismail.github.io/v1/" target="_blank"
+            >Portfolio v-1.0</a
+          >
+        </li>
+        <li>&copy; {{ today | date: "yyyy" }} ikismail</li>
+        <li>
+          Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a>
+        </li>
       </ul>
     </div>
   </footer>
@@ -41,7 +60,8 @@
   <section id="one">
     <header class="major">
       <h2>
-        I am a <b>Full-Stack Web Developer</b> with <b>2 years of Experience</b>.
+        I am a <b>Full-Stack Web Developer</b> with
+        <b>2 years of Experience</b>.
       </h2>
     </header>
     <p>
@@ -64,8 +84,10 @@
 
     <h3></h3>
     <p>
-      <strong>I specialise in applications written in
-        <span style="color: #49bf9d;">Angular</span></strong>. recently I became also a huge fan of
+      <strong
+        >I specialise in applications written in
+        <span style="color: #49bf9d;">Angular</span></strong
+      >. recently I became also a huge fan of
       <span style="color: #49bf9d;">Python</span> aswell. <br />
       My current experience and skills in front-end include:
     </p>
@@ -99,12 +121,16 @@
 
   <!-- Three -->
   <section id="five">
+    <app-google-analytics></app-google-analytics>
+  </section>
+
+  <!-- Four -->
+  <section id="five">
     <app-get-in-touch></app-get-in-touch>
   </section>
 
-  <!-- Four 
-
-  <!-- <section id="five">
+  <!-- Four
+ <section id="five">
     <h2>Elements</h2>
 
     <section>

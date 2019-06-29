@@ -7,9 +7,17 @@ import { GithubCalendarComponent } from "./github-calendar/github-calendar.compo
 import { WorkExperienceComponent } from "./work-experience/work-experience.component";
 import { RecentWorkComponent } from "./recent-work/recent-work.component";
 import { GetInTouchComponent } from "./get-in-touch/get-in-touch.component";
+import { GoogleAnalyticsComponent } from "./google-analytics/google-analytics.component";
 
 @NgModule({
-    imports: [CommonModule, SharedModule, HomeRoutes],
-    declarations: [HomeComponent, GithubCalendarComponent, WorkExperienceComponent, RecentWorkComponent, GetInTouchComponent]
+  imports: [CommonModule, SharedModule, HomeRoutes],
+  declarations: [
+    HomeComponent,
+    GithubCalendarComponent,
+    WorkExperienceComponent,
+    RecentWorkComponent,
+    GetInTouchComponent,
+    GoogleAnalyticsComponent
+  ]
 })
-export class HomeModule { }
+export class HomeModule {}
