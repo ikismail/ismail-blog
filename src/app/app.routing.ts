@@ -1,10 +1,11 @@
-import { Routes, RouterModule } from "@angular/router";
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "",
-    loadChildren: "./index/index.module#IndexModule"
-  }
+    path: '',
+    loadChildren: () =>
+      import('./index/index.module').then((m) => m.IndexModule),
+  },
 ];
 
 export const AppRoutes = RouterModule.forRoot(routes);

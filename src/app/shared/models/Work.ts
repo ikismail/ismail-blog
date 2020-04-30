@@ -2,6 +2,8 @@ export interface Work {
   office?: string;
   position?: string;
   from?: string;
+  link?: string;
+  descriptions?: string[];
   to?: string;
   state?: string;
   countryCode?: string;

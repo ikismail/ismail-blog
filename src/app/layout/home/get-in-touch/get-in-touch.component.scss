@@ -12,16 +12,15 @@ button[type="submit"] {
   height: 60px;
   color: #49bf9d !important;
   border-radius: 0.35em !important;
-  border: solid 3px #49bf9d
+  border: solid 3px #49bf9d;
 }
 
 button[type="submit"]:hover {
-  background-color: none
+  background-color: none;
 }
 
 .error {
   color: #f56a6a;
 }
 
-
-@import "../../../../assets/css/strata.css"
+@import "../../../../assets/css/strata.css";

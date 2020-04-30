@@ -4,12 +4,12 @@
     padding: 4em 4em 4em 4em;
   }
 
-  #header>* {
+  #header > * {
     flex: none;
   }
 
   .button {
-    box-shadow: none !important
+    box-shadow: none !important;
   }
 
   // Hiding Github Calendar in mobile view
@@ -20,10 +20,9 @@
   }
 
   @media screen and (max-width: 980px) {
-
     #footer,
     .actions {
-      display: none !important
+      display: none !important;
     }
   }
 
@@ -42,9 +41,8 @@
   border-bottom: solid 5px #49bf9d;
 }
 
-header.major> :last-child {
+header.major > :last-child {
   border-bottom: solid 5px #49bf9d;
 }
-
 
 @import "../../../assets/css/strata.css";

@@ -1,14 +1,12 @@
 <div id="wrapper">
-
   <div id="main">
     <div class="inner">
       <router-outlet></router-outlet>
     </div>
   </div>
-  <div id="sidebar" [ngClass]="{'inactive': isToggle}">
+  <div id="sidebar" [ngClass]="{ inactive: isToggle }">
     <div class="inner">
       <app-sidebar></app-sidebar>
-
     </div>
     <a href="javascript:;;" class="toggle" (click)="toggle()">Toggle</a>
   </div>

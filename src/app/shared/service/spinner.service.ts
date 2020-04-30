@@ -1,10 +1,12 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root',
 })
 export class SpinnerService {
-  private _selector: string = "loader-wrapper";
+  // tslint:disable-next-line:variable-name
+  private _selector = 'loader-wrapper';
+  // tslint:disable-next-line:variable-name
   private _element: HTMLElement;
 
   constructor() {
@@ -12,12 +14,12 @@ export class SpinnerService {
   }
 
   public show(): void {
-    this._element.style["display"] = "block";
+    this._element.style.display = 'block';
   }
 
   public hide(delay: number = 300): void {
     setTimeout(() => {
-      this._element.style["display"] = "none";
+      this._element.style.display = 'none';
     }, delay);
   }
 }

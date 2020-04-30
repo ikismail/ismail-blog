@@ -1,7 +1,7 @@
 <!-- Header -->
 <header id="header">
   <div class="inner">
-    <a href="javascript:;;" class="image avatar" style="width:11rem"
+    <a href="javascript:;;" class="image avatar" style="width: 11rem;"
       ><img [src]="user.avatar" [alt]="user.name"
     /></a>
     <h1>
@@ -11,13 +11,22 @@
     <h1>{{ user.position }},</h1>
     <h1>{{ user.bio }}</h1>
   </div>
-  <ul class="actions" *ngIf="showBlog">
+  <ul class="actions">
     <li>
+      <a
+        href="../../../assets/Mohammed_Ismail.pdf"
+        download="Mohammed_Ismail_Resume"
+        class="button"
+        style="color: #fff !important;"
+        ><i class="fa fa-file-alt"></i> Download CV</a
+      >
+    </li>
+    <li *ngIf="false">
       <a
         [routerLink]="['/blog']"
         routerLinkActive="router-link-active"
         class="button"
-        style="color: #fff !important"
+        style="color: #fff !important;"
         >My Blog</a
       >
     </li>
@@ -61,7 +70,7 @@
     <header class="major">
       <h2>
         I am a <b>Full-Stack Web Developer</b> with
-        <b>2 years of Experience</b>.
+        <b>2+ years of Experience</b>.
       </h2>
     </header>
     <p>
@@ -70,12 +79,12 @@
       <br />
       My current toolset includes <span style="color: #49bf9d;">Angular</span>,
       <span style="color: #49bf9d;">React.js</span>,
-      <span style="color: #49bf9d;">Vue.js</span>,
+      <!-- <span style="color: #49bf9d;">Vue.js</span>, -->
       <span style="color: #49bf9d;">IoT</span>,
-      <span style="color: #49bf9d;">Ionic</span>,
-      <span style="color: #49bf9d;">Github</span>,
+      <!-- <span style="color: #49bf9d;">Ionic</span>, -->
+      <!-- <span style="color: #49bf9d;">Github</span>, -->
       <span style="color: #49bf9d;">Nodejs</span>,
-      <span style="color: #49bf9d;">GraphQL</span>,
+      <!-- <span style="color: #49bf9d;">GraphQL</span>, -->
       <span style="color: #49bf9d;">Web Services</span>,
       <span style="color: #49bf9d;">Java</span>,
       <span style="color: #49bf9d;">Python</span> and all the other various
@@ -88,7 +97,8 @@
         >I specialise in applications written in
         <span style="color: #49bf9d;">Angular</span></strong
       >. recently I became also a huge fan of
-      <span style="color: #49bf9d;">Python</span> aswell. <br />
+      <span style="color: #49bf9d;">React</span> and
+      <span style="color: #49bf9d;">React Native</span>. <br />
       My current experience and skills in front-end include:
     </p>
     <ul>
@@ -100,15 +110,15 @@
       </li>
       <li>
         Knowledge and experience in many JS ecosystems, by using many libraries
-        like Angular, Ionic Framework, Nodejs,
+        like Angular, React & Nodejs.
       </li>
     </ul>
   </section>
 
-  <section id="two">
+  <!-- <section id="two">
     <h2 style="color: #49bf9d;">My Contributions</h2>
     <app-github-calendar></app-github-calendar>
-  </section>
+  </section> -->
 
   <section id="three">
     <app-work-experience></app-work-experience>
@@ -120,9 +130,9 @@
   </section>
 
   <!-- Three -->
-  <section id="five">
+  <!-- <section id="five">
     <app-google-analytics></app-google-analytics>
-  </section>
+  </section> -->
 
   <!-- Four -->
   <section id="five">

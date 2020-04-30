@@ -1,17 +1,16 @@
-:host() {
+:host {
   .button {
-    box-shadow: none !important
+    box-shadow: none !important;
   }
 }
 
 .image:before {
-  background: none
+  background: none;
 }
 
 .image::after {
   content: "Live Demo" !important;
-  background: url('../../../../assets/css/images/overlay.png')
+  background: url("../../../../assets/css/images/overlay.png");
 }
 
-
-@import "../../../../assets/css/strata.css"
+@import "../../../../assets/css/strata.css";

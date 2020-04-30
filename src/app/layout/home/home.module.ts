@@ -1,13 +1,13 @@
-import { HomeRoutes } from "./home.routing";
-import { SharedModule } from "./../../shared/shared.module";
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { HomeComponent } from "./home.component";
-import { GithubCalendarComponent } from "./github-calendar/github-calendar.component";
-import { WorkExperienceComponent } from "./work-experience/work-experience.component";
-import { RecentWorkComponent } from "./recent-work/recent-work.component";
-import { GetInTouchComponent } from "./get-in-touch/get-in-touch.component";
-import { GoogleAnalyticsComponent } from "./google-analytics/google-analytics.component";
+import { HomeRoutes } from './home.routing';
+import { SharedModule } from './../../shared/shared.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home.component';
+import { GithubCalendarComponent } from './github-calendar/github-calendar.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { RecentWorkComponent } from './recent-work/recent-work.component';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { GoogleAnalyticsComponent } from './google-analytics/google-analytics.component';
 
 @NgModule({
   imports: [CommonModule, SharedModule, HomeRoutes],
@@ -17,7 +17,7 @@ import { GoogleAnalyticsComponent } from "./google-analytics/google-analytics.co
     WorkExperienceComponent,
     RecentWorkComponent,
     GetInTouchComponent,
-    GoogleAnalyticsComponent
-  ]
+    GoogleAnalyticsComponent,
+  ],
 })
 export class HomeModule {}

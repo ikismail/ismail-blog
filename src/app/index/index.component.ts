@@ -1,9 +1,9 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-index",
-  templateUrl: "./index.component.html",
-  styleUrls: ["./index.component.scss"]
+  selector: 'app-index',
+  template: `<router-outlet></router-outlet>`,
+  styleUrls: [],
 })
 export class IndexComponent implements OnInit {
   isToggle = false;

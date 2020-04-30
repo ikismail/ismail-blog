@@ -1,9 +1,10 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root',
 })
 export class PreloaderService {
+  // tslint:disable-next-line:variable-name
   private static _loaders: Array<Promise<any>> = [];
 
   public static registerLoader(method: Promise<any>): void {
@@ -20,13 +21,13 @@ export class PreloaderService {
     });
   }
 
-  private static _executeAll(done: Function): void {
+  private static _executeAll(done: any): void {
     setTimeout(() => {
       Promise.all(PreloaderService._loaders)
-        .then(values => {
+        .then((values) => {
           done.call(null, values);
         })
-        .catch(error => {
+        .catch((error) => {
           console.error(error);
         });
     });
