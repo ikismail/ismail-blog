@@ -1,5 +1,5 @@
 export class Contact {
-    from?: string;
-    name?: string;
-    message?: string;
+  email?: string;
+  name?: string;
+  message?: string;
 }

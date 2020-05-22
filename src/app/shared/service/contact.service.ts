@@ -1,24 +1,32 @@
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { HttpClient, HttpParams } from "@angular/common/http";
+import { Injectable } from "@angular/core";
 
-import { Contact } from './../models/Contact';
+import { Contact } from "./../models/Contact";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ContactService {
   BASE_URL;
 
   constructor(private http: HttpClient) {
-    this.BASE_URL =
-      'https://ikismail-portfolio.herokuapp.com/api/user/mailservice';
+    // this.BASE_URL =
+    //   "https://ikismail-portfolio.herokuapp.com/api/user/mailservice";
   }
 
   sendMessage(data: Contact) {
-    return this.http.post(this.BASE_URL, data);
+    const body = new HttpParams()
+      .set("form-name", "contact")
+      .append("name", data.name)
+      .append("email", data.email)
+      .append("message", data.message);
+
+    return this.http.post("/", body.toString(), {
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    });
   }
 
-  getAllMessages() {
-    return this.http.get(this.BASE_URL);
-  }
+  // getAllMessages() {
+  //   return this.http.get(this.BASE_URL);
+  // }
 }
