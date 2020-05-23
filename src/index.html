@@ -26,8 +26,8 @@
     />
 
     <!-- Redirecting to custom domain  Comment it while development-->
-    <meta http-equiv="refresh" content="0; url=https://ikismail.com" />
-    <link rel="canonical" href="https://ikismail.com" />
+    <!-- <meta http-equiv="refresh" content="0; url=http://ikismail.com" />
+    <link rel="canonical" href="http://ikismail.com" /> -->
     <!-- End Line -->
 
     <link
@@ -47,6 +47,19 @@
       <div id="loader"></div>
     </div>
     <app-root></app-root>
+
+    <!-- note that the form below is hidden, but necessary for auto-form handling with Netlify -->
+    <form
+      name="contact"
+      subject="A Message From Personal Website"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
 
     <!-- Scripts -->
     <script src="./assets/js/jquery.min.js"></script>
