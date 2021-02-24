@@ -1,25 +1,20 @@
-import { IndexComponent } from './index.component';
-import { Routes, RouterModule } from '@angular/router';
+import { IndexComponent } from "./index.component";
+import { Routes, RouterModule } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     component: IndexComponent,
     children: [
       {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full',
+        path: "",
+        redirectTo: "home",
+        pathMatch: "full",
       },
       {
-        path: 'home',
+        path: "home",
         loadChildren: () =>
-          import('../layout/home/home.module').then((m) => m.HomeModule),
-      },
-      {
-        path: 'blog',
-        loadChildren: () =>
-          import('../layout/blog/blog.module').then((m) => m.BlogModule),
+          import("../layout/home/home.module").then((m) => m.HomeModule),
       },
     ],
   },
