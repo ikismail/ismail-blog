@@ -1,11 +1,10 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NgProgressModule } from 'ngx-progressbar';
-import { NgProgressRouterModule } from 'ngx-progressbar/router';
-import { ToastrModule } from 'ngx-toastr';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { NgProgressModule } from "ngx-progressbar";
+import { ToastrModule } from "ngx-toastr";
 @NgModule({
   imports: [
     CommonModule,
@@ -15,12 +14,11 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule,
     ToastrModule.forRoot({
       timeOut: 1500,
-      positionClass: 'toast-bottom-right',
+      positionClass: "toast-bottom-right",
       preventDuplicates: true,
       progressBar: true,
     }),
     NgProgressModule,
-    NgProgressRouterModule,
   ],
   declarations: [],
   exports: [
@@ -29,7 +27,6 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     ReactiveFormsModule,
     NgProgressModule,
-    NgProgressRouterModule,
     ToastrModule,
   ],
 })
