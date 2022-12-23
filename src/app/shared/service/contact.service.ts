@@ -15,15 +15,10 @@ export class ContactService {
   }
 
   sendMessage(data: Contact) {
-    const body = new HttpParams()
-      .set("form-name", "contact")
-      .append("name", data.name)
-      .append("email", data.email)
-      .append("message", data.message);
-
-    return this.http.post("/", body.toString(), {
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    });
+    return this.http.post(
+      "https://maker.ifttt.com/trigger/portfolio-contact-us/json/with/key/cfgRz9GBnrVrzzTJtZFmhC",
+      JSON.stringify(data)
+    );
   }
 
   // getAllMessages() {

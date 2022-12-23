@@ -2,11 +2,14 @@ export interface User {
   id?: number;
   guid?: string;
   name?: string;
-  bio?: string;
   position?: string;
+  bio?: string;
+  avatar?: string;
   email?: string;
   phoneNumber?: string;
-  avatar?: string;
+  title?: string;
+  description?: string;
+  toolset?: string[];
   links?: SocialLink[];
   location?: Location;
 }

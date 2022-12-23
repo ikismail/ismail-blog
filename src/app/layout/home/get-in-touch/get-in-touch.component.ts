@@ -55,7 +55,13 @@ export class GetInTouchComponent implements OnInit {
     submitButton.disabled = true;
 
     this.contactService.sendMessage(this.form.value).subscribe(
-      (data) => {},
+      (data) => {
+        this.toastr.success("Got your message!", "Message Sent!");
+        this.loading = false;
+        submitButton.disabled = false;
+
+        this.cdr.detectChanges();
+      },
       (err) => {
         if (err instanceof ErrorEvent) {
           // client side error

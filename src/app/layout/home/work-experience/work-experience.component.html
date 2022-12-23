@@ -1,8 +1,9 @@
 <div class="work-experience">
-  <h2 style="color: #49bf9d;">Work Experience</h2>
+  <h2 style="color: #49bf9d">Work Experience</h2>
   <div *ngFor="let work of works; let i = index">
     <h3>
-      <a [href]="work.link">{{ work.office }}</a> | {{ work.position }}
+      {{ work.position }} |
+      <a [href]="work.link" target="_blank">{{ work.office }}</a>
     </h3>
     <p>
       {{ work.from }} - {{ work.to }} | {{ work.state }}, {{ work.countryCode }}
@@ -20,6 +21,6 @@
         }}</a>
       </li>
     </ul>
-    <hr style="width: 50%;" *ngIf="works.length - 1 !== i" />
+    <hr style="width: 50%" *ngIf="works.length - 1 !== i" />
   </div>
 </div>

@@ -1,22 +1,23 @@
-import { SpinnerService } from './../../shared/service/spinner.service';
-import { Profile } from './../../shared/data/profile';
-import { projects } from './../../shared/data/projects';
-import { User } from './../../shared/models/User';
+import { SpinnerService } from "./../../shared/service/spinner.service";
+import { Profile } from "./../../shared/data/profile";
+import { projects } from "./../../shared/data/projects";
+import { User } from "./../../shared/models/User";
 import {
   Component,
   OnInit,
   ViewEncapsulation,
   AfterViewInit,
-} from '@angular/core';
+} from "@angular/core";
+declare var particlesJS: any;
+
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss'],
+  selector: "app-home",
+  templateUrl: "./home.component.html",
+  styleUrls: ["./home.component.scss"],
   encapsulation: ViewEncapsulation.Emulated,
 })
 export class HomeComponent implements OnInit, AfterViewInit {
   user: User;
-
   projects = projects;
 
   showBlog = false;
@@ -50,27 +51,31 @@ export class HomeComponent implements OnInit, AfterViewInit {
     const self = this;
     setTimeout(() => {
       self._spinner.hide();
+
+      particlesJS.load("particlejs", "../../../assets/particle.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
     }, 1500);
   }
 
   iconFinderHandler(icon: string) {
     switch (icon) {
-      case 'github':
-        return 'fa-github';
-      case 'facebook':
-        return 'fa-facebook-f';
-      case 'freeCodeCamp':
-        return 'fa-free-code-camp';
-      case 'linkedIn':
-        return 'fa-linkedin';
-      case 'twitter':
-        return 'fa-twitter';
-      case 'youtube':
-        return 'fa-youtube';
-      case 'codepen':
-        return 'fa-codepen';
-      case 'instagram':
-        return 'fa-instagram';
+      case "github":
+        return "fa-github";
+      case "facebook":
+        return "fa-facebook-f";
+      case "freeCodeCamp":
+        return "fa-free-code-camp";
+      case "linkedIn":
+        return "fa-linkedin";
+      case "twitter":
+        return "fa-twitter";
+      case "youtube":
+        return "fa-youtube";
+      case "codepen":
+        return "fa-codepen";
+      case "instagram":
+        return "fa-instagram";
     }
   }
 }

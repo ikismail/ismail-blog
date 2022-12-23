@@ -1,5 +1,5 @@
 <div class="get-in-touch">
-  <h2 style="color: #49bf9d;">Get In Touch</h2>
+  <h2 style="color: #49bf9d">Get In Touch</h2>
 
   <div class="row">
     <div class="col-8 col-12-small">
@@ -41,7 +41,7 @@
         <p *ngIf="isError" [class]="'error ' + errorClass">
           Complete the mandatory (*) fields
         </p>
-        <ul class="actions" style="margin-top: 2rem;">
+        <ul class="actions" style="margin-top: 2rem">
           <li>
             <button type="submit" id="submitMessage">
               <i class="fa fa-spinner fa-spin mr-3" *ngIf="loading"></i>
@@ -54,19 +54,25 @@
     </div>
     <div class="col-4 col-12-small">
       <ul class="labeled-icons">
-        <li>
-          <h3 class="icon fa-home"><span class="label">Address</span></h3>
-          42/2, Jothi Ramalingam Street,<br />
-          Choolaimedu, Chennai 600094<br />
-          Tamil Nadu, IN
-        </li>
         <!-- <li>
           <h3 class="icon fa-mobile"><span class="label">Phone</span></h3>
           +91-{{ user.phoneNumber }}
         </li> -->
         <li>
+          <h3 class="icon fa-discord"><span class="label">Discord</span></h3>
+          <a href="https://discordapp.com/channels/@me/ikismail#4685"
+            >ikismail#4685</a
+          >
+        </li>
+        <li>
           <h3 class="icon fa-envelope-o"><span class="label">Email</span></h3>
           <a href="mailto:{{ user.email }}">{{ user.email }}</a>
+        </li>
+        <li>
+          <h3 class="icon fa-home"><span class="label">Address</span></h3>
+          14C, Jasper, Olympia Opaline<br />
+          Rajiv Gandhi Salai, OMR, Chennai 600130<br />
+          Tamil Nadu, IN.
         </li>
       </ul>
     </div>

@@ -9,7 +9,7 @@ export const projects = [
   },
   {
     name: 'Vue Shopping Cart',
-    image: './assets/images/img/vue-shopping-cart.png',
+    image: './assets/images/img/vue-shopping-cart.PNG',
     description:
       'Developing a ShoppingCart (Ecommerce MEVN Stack) Application using Vuejs + Nodejs + Express + Mongodb + PWA etc.,',
     live_link: 'https://vue-shop-cart.herokuapp.com/#/',
