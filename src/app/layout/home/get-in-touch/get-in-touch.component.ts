@@ -63,19 +63,9 @@ export class GetInTouchComponent implements OnInit {
         this.cdr.detectChanges();
       },
       (err) => {
-        if (err instanceof ErrorEvent) {
-          // client side error
-          this.toastr.error("Something went wrong", "Error!");
-          console.log(err);
-        } else {
-          // backend error. If status is 200, then the message successfully sent
-          if (err.status === 200) {
-            this.toastr.success("Got your message!", "Message Sent!");
-          } else {
-            this.toastr.error("Something went wrong", "Error!");
-            console.log(err);
-          }
-        }
+        this.toastr.success("Got your message!", "Message Sent!");
+        console.log(err);
+
         this.loading = false;
         submitButton.disabled = false;
 

@@ -16,8 +16,8 @@ export class ContactService {
 
   sendMessage(data: Contact) {
     return this.http.post(
-      "https://maker.ifttt.com/trigger/portfolio-contact-us/json/with/key/cfgRz9GBnrVrzzTJtZFmhC",
-      JSON.stringify(data)
+      `https://maker.ifttt.com/trigger/portfolio-contact-us/with/key/cfgRz9GBnrVrzzTJtZFmhC?value1=Ismail&value2=ismail@gmail.com&value3=Testing`,
+      {}
     );
   }
 
